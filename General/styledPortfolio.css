@@ -10,15 +10,15 @@ body{
 /* Fonts */
 @font-face {
     font-family: whisper;
-    src: url(Fonts/Whisper/Whisper-Regular.ttf);
+    src: url(General/Whisper/Whisper-Regular.ttf);
 }
 @font-face {
     font-family: Ojuju;
-    src: url(Fonts/Ojuju/Ojuju-VariableFont_wght.ttf);
+    src: url(General/Ojuju/Ojuju-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: madimi;
-    src: url(Fonts/Madimi_One/MadimiOne-Regular.ttf);
+    src: url(General/Madimi_One/MadimiOne-Regular.ttf);
 }
 
 
