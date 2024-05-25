@@ -1,0 +1,148 @@
+.container{
+    background-color: white;
+    width: 800px;
+    height: 800px;
+    border: 2px solid blue;
+    margin: auto;
+    position: relative;
+    min-width: 800px;
+}
+body{
+    background-color: rgb(20, 34, 55);
+    height: 20vh;
+}
+.row1{
+    display: flex;
+}
+.row2{
+    display: flex;
+}
+.row3{
+    display: flex;
+}
+.row4{
+    display: flex;
+}
+.row5{
+    display: flex;
+}
+.row6{
+    display: flex;
+}
+.row7{
+    display: flex;
+}
+.row8{
+    display: flex;
+}
+.white{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+}
+.black{
+    background-color: rgb(53, 50, 50);
+    width: 100px;
+    height: 100px;
+    
+}
+.white img{
+    height: 80px;
+    width: 80px;
+    /* margin: 10px; */
+}
+.black img{
+    /* z-index: 1; */
+    height: 80px;
+    width: 80px;
+    
+}
+.w-king img{
+    position: relative;
+    top: 10px;
+    width: 93px;
+    left: 5px;
+}
+#w-knight img{
+    position: relative;
+    left: 10px;
+    height: 90px;
+    width: 85px;
+}
+.w-queen img{
+    width: 95px;
+    position: relative;
+    left: 4px;
+    top: 10px;
+}
+#w-rook img{
+    position: relative;
+    top: 10px;
+    left: 9px;
+}
+#w-bishop img{
+    position: relative;
+    top: 10px;
+    left: 8px;
+}
+#w-pawn img{
+    position: relative;
+    top: 15px;
+    left: 5px;
+}
+#b-rook img{
+    position: relative;
+    bottom: -14px;
+    left: 8px;
+}
+#b-knight img{
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+#b-bishop img{
+    position: relative;
+    top: 10px;
+    left: 9px;
+}
+#b-king img{
+    position: relative;
+    top: 10px;
+    left: 8px;
+    width: 85px;
+}
+#b-queen img{
+    width: 85px;
+    height: 90px;
+    position: relative;
+    top: 5px;
+    left: 9px;
+}
+#b-queen img :hover{
+    transform: translateY(-10px);
+}
+#b-pawn img{
+    position: relative;
+    top: 10px;
+    left: 14px;
+    width: 70px;
+    height: 70px;
+}
+.container h1{
+    position: absolute;
+    top: 360px;
+    left: 200px;
+    font-size: 55px;
+    width: auto;
+    background-image: url(./pieces/steve-busch-upi7jXievio-unsplash.jpg);
+    color: darkorchid;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 10px;
+}
+.emp{
+    color: red;
+    text-transform: uppercase;
+}
