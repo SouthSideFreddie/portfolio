@@ -1,0 +1,994 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: wheat;
+    background-color: rgb(61, 57, 57);
+}
+
+/* Fonts */
+@font-face {
+    font-family: whisper;
+    src: url(Fonts/Whisper/Whisper-Regular.ttf);
+}
+@font-face {
+    font-family: Ojuju;
+    src: url(Fonts/Ojuju/Ojuju-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: madimi;
+    src: url(Fonts/Madimi_One/MadimiOne-Regular.ttf);
+}
+
+
+/* Animations */
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    0%, 100%{border-color: transparent;}
+    50%{border-color: blueviolet;}
+}
+
+@keyframes grow {
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+@keyframes tiny_grow {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+@keyframes large_grow {
+    0%{
+        transform: scale(3.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+
+/* Header styling starts here */
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222831;
+}
+.logo{
+    width: 250px;
+    height: 50px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+nav{
+    padding: 25px 0px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: madimi;
+    color: black;
+    transition: background-color .5s ease;
+}
+nav a:hover{
+    background-color: beige;
+    border-radius: 30px;
+    padding: 5px 7px;
+}
+
+
+
+
+/* Mobile header styling starts here */
+
+.mobile_view{
+    display: none;
+    flex-direction: column;
+}
+
+
+
+/* hamburger menu bar and X signs styling */
+#symbols{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.bar_1, .bar_2, .bar_3{
+    width: 50px;
+    height: 5px;
+    background-color: darkblue;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 7.8px;
+}
+.bar_1, .bar_3{
+    transform: rotate(0);
+}
+.bar_2{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.X{
+    .bar_1{
+        transform: rotate(45deg);
+    }
+    .bar_2{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    .bar_3{
+        transform: rotate(-45deg);
+    }
+}
+/* hamburger menu bar and X signs styling ends here */
+
+
+.links{
+    display: none;
+    background-color: burlywood;
+    text-align: center;
+    position: fixed;
+    top: 51px;
+    left: 0;
+    max-width: 100%;
+    font-size: 25px;
+    padding: 0 110px;
+    animation: grow 1.5s forwards;
+}
+.links li{
+    padding:15px 0;
+    list-style: none;
+}
+.links li a{
+    color: darkolivegreen;
+    text-decoration: none;
+}
+.open{
+    display: flex;
+}
+
+
+
+/* About section styling starts here */
+
+#about_section{
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #393E46;
+    animation: grow 1.8s forwards;
+}
+.about_text{
+    flex: 1;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.big{
+    width: 435px;
+}
+.big h1{
+    overflow: hidden;
+    font-family: ojuju;
+    border-right: 3px solid blueviolet;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 4s steps(25, end) infinite, blink-caret .75s step-end infinite;
+    font-size: 40px;
+    color: blueviolet;
+    float: left;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+.selfie{
+    flex: 1;
+    height: 450px;
+    border: 3px solid salmon;
+    border-radius: 9px;
+}
+.selfie img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* Skill section styling starts here */
+
+#skill_sect{
+    padding: 40px 20px;
+    background-color: #01060f;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 15px;
+}
+.skill_text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+.skill_text h1{
+    font-size: 90px;
+}
+#skillz{
+    list-style:lower-greek;
+    width: 1000px;
+    font-size: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    display: none;
+    animation: tiny_grow 4s forwards;
+}
+#taunt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color:crimson;
+    font-size: 39px;
+    font-family: madimi;
+}
+.clickHere{
+    color: darkgoldenrod;
+    text-align: center;
+}
+.stars{
+    cursor: not-allowed;
+}
+#taunt span{
+    cursor:no-drop;
+    width: 100px;
+}
+
+
+/* Experience Section Styling Starts here */
+.experienz{
+    height: 50vh;
+    background-color: #5c8374;
+    display: flex;
+    justify-content: center;
+}
+.experience{
+    display: flex;
+    justify-content: last baseline;
+    align-items: center;
+    gap: 20px;
+}
+.exp_text{
+    font-size: 40px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.exp_text button{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer ;
+    font-weight: 800;
+    color: darkslategrey;
+}
+
+.fill{
+    display: none;
+    font-size: 70px;
+    animation: tiny_grow 3s forwards;
+}
+.showcase1{
+    .one{
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        color: chartreuse;
+        max-height: 95px;
+    }
+}
+.showcase2{
+    .two{
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        color: rgb(41, 66, 17);
+        font-family: madimi;
+        max-height: 200px;
+    }
+}
+.showcase3{
+    .three{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(45deg, purple, red, brown);
+        color: transparent;
+        font-family: ojuju;
+        background-clip: text;
+        font-weight: 600;
+    }
+}
+
+
+
+/* Project styling begins here */
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #183D3D;
+    padding: 30px 0;
+    position: relative;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.intro h1{
+    font-size: 40px;
+}
+.seeProjects{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    color: cornflowerblue;
+    font-weight: 600;
+    cursor: pointer;
+}
+.projectlist{
+    display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 6%;
+    padding-bottom: 90px;
+    animation: large_grow 4s forwards;
+}
+.projectlist h1{
+    position: absolute;
+    top: -10px;
+    font-size: 45px;
+    color: transparent;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #ffca95, #ffdab1, #ffecd0);
+    background-clip: text;
+}
+.projectlist h1 span{
+    color: #01060f;
+}
+.projectlist a{
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(135deg, #5cdb95, #8ee4af, #b7f0d1, #95f4e6, #f0f9eb);
+    background-clip: text;
+    font-size: 20px;
+}
+.projectImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.projectImg img{
+    width: 250px;
+    height: 150px;
+    border: 2px solid pink;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: center;
+}
+.hireMe{
+    position: absolute;
+    bottom: -20px;
+    display: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    left: 498;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid brown;
+    font-size: 20px;
+    background-color: pink;
+    animation: tiny_grow 4s backwards;
+    transition: background-color 0.5s ease-in;
+}
+.hireMe a{
+    color: #7077A1;
+}
+.hireMe:hover{
+    background-color: red;
+}
+
+
+
+/* Contact form styling begins here */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;    
+}
+#contact form{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    gap: 10px;
+    justify-self: left;
+}
+#contact form p{
+    font-size: 30px;
+    text-align: center;
+}
+.name_space{
+    padding: 10px;
+    border-radius: 4px;
+    width: 300px;
+    text-align: center;
+    background-color: transparent;
+    font-size: 19px;
+    border-bottom: 3px solid;
+    color: antiquewhite;
+    border-color: blueviolet;
+}
+#email{
+    width: 300px;
+    padding: 10px;
+    border-bottom: 3px solid;
+    border-color: blueviolet;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 19px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.submit{
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #7077A1;
+    font-size: 19px;
+    font-weight: 800;
+    color: rgb(36, 31, 28);
+}
+#message{
+    min-width: 350px;
+    min-height: 150px;
+    font-size: 19px;
+    text-align: center;
+    padding: 2px;
+    background-color: transparent;
+    border-bottom: 3px solid;
+    border-color: blueviolet;
+    border-radius: 5px;
+}
+
+/* Footer styling begins here */
+
+footer{
+    background-color: rgb(87, 83, 77);
+}
+#socials{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+    flex-direction: column;
+}
+#socials h1{
+    font-size: 35px;
+    font-weight: 400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(82, 38, 9);
+    white-space: nowrap;
+}
+.media_links{
+    width: 500px;
+    display: flex;
+    gap: 50px;
+    padding: 10px 0;
+    justify-content: center;
+    padding-top: 10px;
+}
+.media_links img{
+    width: 50px;
+}
+#phone{
+    cursor: pointer;
+}
+#number{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    font-size: 15px;
+    white-space: nowrap;
+    color: #01060f;
+}
+.copyright{
+    padding: 8px 0;
+   font-size: 20px;
+   color: black;
+}
+.mail{
+    color: black;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.mail a{
+    color: rgb(65, 6, 16);
+    text-decoration: none;
+    font-size: 25px;
+}
+.copynMail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-top: 10px;
+}
+.point{
+    font-size: 50px;
+    right: 300px;
+    top: 0;
+    transform: rotate(70deg);
+    transform-origin: 1px;
+    position: absolute;
+}
+
+
+/* Mobile Responsiveness starts here */
+
+/* tablets screen */
+@media(max-width:834px){
+    header{
+        justify-content: space-evenly;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    nav{
+        padding-right: 20px;
+    }
+    nav a:hover{
+        padding: 0px 0px;
+        background-color: transparent;
+    }
+    .big{
+        width: 330px;
+    }
+    .about_text{
+        text-align: center;
+        padding-right: 8px;
+    }
+    .about_text h1{
+        font-size: 33px;
+        text-align: left;
+    }
+    .big h1{
+        font-size: 30px;
+    }
+    #skill_sect{
+        height: 40vh;
+    }
+    #skillz{
+        width: 750px;
+        padding-left: 20px;
+    }
+    .stars{font-size: 60px;}
+    #clicktarget{
+        font-size: 90px;
+    }
+    .experienz{
+        height: 30vh;
+    }
+    .exp_text{
+        gap: 15px;
+    }
+    .exp_text button{
+        padding: 20px 20px;
+        font-size: 30px;
+    }
+    .intro{
+        text-align: center;
+    }
+    .seeProjects{
+        padding: 25px 20px;
+        font-size: 30px;
+    }
+    .projectlist{
+        padding-right: 15px ;
+        padding-left: 15px;
+    }
+    .projectlist h1{
+        font-size: 38px;
+        top: -21px;
+    }
+    .projectlist a{
+        font-size: 26px;
+    }
+    .hireMe{
+        bottom: -10px;
+    }
+    #socials h1{
+        font-size: 40px;
+        white-space: wrap;
+        text-align: center;
+    }
+    .mail{
+        font-size: 35px;
+    }
+    .mail a{
+        font-size: 35px;
+    }
+    .copyright{
+        font-size: 25px;
+    }
+}
+@media(max-width: 770px){
+   .logo{
+    width: 200px;
+   }
+   nav ul li a{
+    font-size: 19px;
+   }
+    #skill_sect{
+        height: 53vh;
+    }
+    .skill_text h1{
+        text-align: center;
+        white-space: nowrap;
+    }
+    
+    #skillz{
+        width: 700px;
+        padding-left: 60px;
+        text-align: center;
+    }
+    .experienz{
+        height: 35vh;
+    }
+}
+
+
+/* Mobile phones responsiveness styling starts here */
+@media(max-width: 500px){
+    header{
+        justify-content: space-between;
+    }
+    .logo{
+        width: 180px;
+    }
+    nav{
+        display: none;
+    }
+
+    .mobile_view{
+        display: flex;
+    }
+    #symbols{
+        justify-content: space-evenly;
+        padding-right: 18px;
+    }
+    .links{
+        max-width: 40%;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        white-space: nowrap;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #about_section{
+        flex-direction: column-reverse;
+    }
+    .about_text{
+        text-align: center;
+    }
+    .about_text h1{
+        padding-top: 5px;
+        text-align:left;
+    }
+    .selfie img{
+        height: 300px;
+        width: 350px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    #skill_sect{
+        height: 40vh;
+        padding: 20px 10px;
+    }
+    #skillz{
+        width: 750px;
+        padding-left: 20px;
+    }
+    .skill_text h1{
+        font-size: 40px;
+    }
+    #taunt{
+        font-size: 25px;
+        text-align: center;
+    }
+    .stars{
+        font-size: 40px;
+    }
+    #clicktarget{
+        font-size: 60px;
+    }
+    #skillz{
+        width: 300px;
+        gap: 10px;
+        font-size: 23px;
+    }
+    .experienz{
+        height: 50vh;
+    }
+    .exp_text{
+        font-size: 19.5px;
+    }
+    .exp_text button{
+        padding: 5px;
+    }
+    .fill{
+        font-size: 50px;
+    }
+    .seeProjects{
+        padding: 6px;
+        font-weight: 800;
+    }
+    .projectlist{
+        padding-top: 15%;
+    }
+    .projectlist h1{
+        font-size: 27px;
+        text-align: center;
+    }
+    #contact form p{
+        font-size: 28px;
+    }
+    footer{
+        max-height: 50vh;
+    }
+    #socials{
+        gap: 10px;
+    }
+    #socials h1{
+        font-size: 25px;
+    }
+    .media_links{
+        padding-top: 20px;
+    }
+    .mail{
+        font-size: 25px;
+        text-align: center;
+    }
+    .mail a{
+        text-decoration: none;
+    }
+    .copyright{
+        padding-top: 25px;
+        font-size: 20px;
+    }
+}
+
+
+/* Smaller mobile phone screens */
+@media(max-width:350px){
+    .bar_1, .bar_2, .bar_3{
+        transform-origin: 4.4px;
+        width: 40px;
+        height: 3.5px;
+    }
+    .bar_1, .bar_3{
+        transform: rotate(0);
+    }
+    .bar_2{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .links{
+        max-width: 33%;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        white-space: nowrap;
+    }
+    .links li{
+        padding: 10px;
+    }
+    #about_section{
+        padding: 20px 10px;
+    }
+    .selfie img{
+        max-height: 50%;
+    }
+    .about_text{
+        max-width: 300px;
+    }
+    .big{
+        width: 271px;
+    }
+    .big h1{
+        font-size: 25px;
+    }
+    #skill_sect{
+        max-height: 50vh;
+        padding: 10px 40px 30px 40px;
+    }
+    .skill_text{
+        gap: 12px;
+    }
+    .skill_text h1{
+        font-size: 32px;
+    }
+    #skillz{
+        width: 280px;
+        font-size: 18px;
+        gap: 10px;
+        text-align: justify; 
+    } 
+    #taunt p{
+        font-size: 20px;
+        max-width: 260px;
+    }
+    #taunt span{
+        font-size: 50px;
+    }
+    #skillz{
+        max-width: 750px;
+        padding-left: 20px;
+    }
+    .experienz{
+        max-height: 30vh;
+    }
+    .exp_text{
+        gap: 15px;
+    }
+    .exp_text h1{
+        font-size: 25px;
+    }
+    .exp_text button{
+        padding: 8px;
+        font-size: 18px;
+    }
+    .fill{
+        font-size: 30px;
+    }
+    .intro{
+        text-align: center;
+    }
+    .seeProjects{
+        padding: 8px;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .projectlist{
+        padding-right: 15px ;
+        padding-left: 15px;
+    }
+    .projectlist h1{
+        font-size: 23px;
+        top: -21px;
+    }
+    .projectlist h1 span{
+        color: black;
+    }
+    .projectlist a{
+        font-size: 20px;
+    }
+    .hireMe{
+        bottom: -10px;
+    }
+    #contact form{
+        gap: 15px;
+    }
+    #contact form p{
+        font-size: 27px;
+        max-width: 280px;
+    }
+    .name_space, #email{
+        max-width: 250px;
+    }
+    #message{
+        min-width: 300px;
+        min-height: 100px;
+    }
+    .submit{
+        padding: 8px;
+        font-size: 18px;
+    }
+    #socials{
+        padding: 5px;
+    }
+    #socials h1{
+        font-size: 20px;
+        font-weight: 400;
+        white-space: wrap;
+        text-align: center;
+    }
+    .media_links{
+        padding: 5px 0;
+    }
+    .media_links img{
+        width: 27px;
+    }
+    .mail{
+        font-size: 20px;
+    }
+    .copyright{
+        font-size: 18px;
+        padding: 3px 0;
+    }
+    footer{
+        max-height: 80vh;
+    }
+}
