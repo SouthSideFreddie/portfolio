@@ -1,0 +1,343 @@
+/* Global Styling */
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: grey;
+    font-size: 17px;
+}
+
+@font-face {
+    font-family: Ojuju;
+    src: url(Ojuju/Ojuju-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: whisper;
+    src: url(Whisper/Whisper-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-black;
+    src: url(Roboto/Roboto-Black.ttf);
+}
+/* Global styling ends */
+
+
+/* Navigation Styling */
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.main_nav{
+    padding: 10px 80px;
+}
+.nav_item{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+.links li{
+    padding: 15px;
+    border-radius: 30px;
+}
+.membership{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.signIn{
+    display: flex;
+    height: 35px;
+    padding-right: 10px;
+    gap: 2px;
+    text-align: center;     
+    border-radius: 30px;
+    align-items: center;
+    transition: color 2s ease 2s;
+}
+
+.signUp{
+    display: flex;
+    align-items: center;
+    text-align: center;     
+    gap: 2px;
+    padding-right: 10px;
+    height: 30px;
+}
+.signIn img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.signUp img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.mobile_menu{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    transition: 0.3s ease-in all;
+    top: -100%;
+    padding: 10px 0px;
+    right: -100%;
+    border-radius: 80%;
+    display: none;
+}
+.mobile_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+}
+.reset{
+    right: 0%;
+    top: 13%;
+    border-radius: 0%;
+    display: block;
+}
+.signs{
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+#action{
+    width: 35px;
+    display: none;
+    overflow: hidden;
+    border-radius: 5px;
+}
+#bars{
+    object-fit: cover;
+    padding: 8px 7px;
+}
+#X{
+    object-fit: cover;
+    padding: 8px 7px;
+}
+/* navigation styling ends */
+
+/* Section styling starts */
+.hero_section{
+    padding: 0 75px;
+    display: flex;
+    height: 95vh;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+.hero_right{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+.hero_left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.hero_right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.gradient{
+    color: transparent;
+    background-image: linear-gradient(45deg,brown, darkcyan, pink);
+    background-clip: text;
+    font-size: 55px;
+}
+.hero_left_text{
+    line-height: 23px;
+}
+.primary_btn{
+    height: 35px;
+    max-width: fit-content;
+    background-color: green;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+    font-family: roboto-black;
+    border-radius: 15px;
+    padding: 8px 8px 3px;
+}
+.primary_btn img{
+    width: 20px;
+    object-fit: contain;
+}
+
+/* Lower Section styling starts here */
+.services_section{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 0px;
+    border: 2px solid red;
+}
+.service_text{
+    width: 530px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+.h1_line{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 30px;
+
+}
+.line{
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.showbox{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    width: 100%;
+}
+.boxes{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+    text-align: center;
+    border: 3px solid black;
+}
+.one{
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.three{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.box_img{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(8, 49, 8);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_img img{
+   width: 50px;
+}
+.middle{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 30px;
+}
+/* Hero responsiveness starts here */
+/* Tablet Screen */
+@media(max-width:834px) {
+    .main_nav{
+        padding: 10px 16px;
+    }
+    .hero_section{
+        padding: 0 16px;
+        height: 80vh;
+    }
+    .hero_right{
+        height: 85%;
+    }
+    .hero_left{
+        text-align: center;
+        font-size: 25px;
+    }
+    .hero_left h1{
+        font-size: 40px;
+    }
+    .gradient{
+        color: transparent;
+        background-image: linear-gradient(45deg,rgb(143, 10, 10), rgb(11, 160, 160), rgb(73, 3, 15));
+        background-clip: text;
+    }
+    .primary_btn{
+        font-size: 25px;
+        padding: 32px 15px;
+        border-radius: 30px;
+    }
+    .service_text{
+        width: 300px;
+    }
+    .boxes{
+        width: 100px;
+        height: 50%;
+    }
+    .showbox{
+        width: 100%;
+        border: 2px solid springgreen;
+        flex: 1;
+    }
+}
+
+/* Mobile Screen */
+@media(max-width:500px){
+    .links{
+        display: none;
+    }
+    .membership{
+        display: none;
+        gap: 20px;
+    }
+    .signIn, .signUp{
+        display: block;
+    }
+    .mobile_links{
+        font-size: 30px;
+    }
+    #action{
+        display: flex;
+    }
+    .hero_section{
+        padding: 10px 16px;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .hero_left h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .hero_left_text{
+        text-align: center;
+        font-size: 20px;
+    }
+    .primary_btn{
+        align-self: center;
+        margin-bottom: 20px;
+    }
+}
