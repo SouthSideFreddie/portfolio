@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Imported Fonts */
+@font-face {
+    font-family: Ojuju;
+    src: url(Ojuju/Ojuju-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: whisper;
+    src: url(Whisper/Whisper-Regular.ttf);
+}
+@font-face {
+    font-family: madimi;
+    src: url(Madimi_One/MadimiOne-Regular.ttf);
+}
+
+
+
+body{
+    background-color: pink;
+    min-height: 100vh;
+    font-family: Ojuju;
+}
+
+/* Styling the navigation bar */
+nav{
+    display: flex;
+    background-color: lawngreen;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    height: 50px;
+}
+.compname{
+    font-size: 35px;
+
+}
+.links{
+    display: flex;
+}
+.links li{
+    list-style: none;
+}
+.links li a{
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0px 40px;
+    font-weight: bold;
+    color: blueviolet;
+    text-transform: uppercase;
+}
+
+section{
+    height: 100%;
+}
+
+.switch{
+    background-color: white;
+    height: 75px;
+    width: 80%;
+    border-radius: 300px;
+    margin: 20px 10px 0px 0px;
+    align-self: center;
+    box-shadow: 0px 5px 9px;
+}
+
+section #ball{
+    width: 50%;
+    background-color: darkgrey;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.modeOpsTxt{
+    margin-right: 10px;
+}
+
+.modeOps{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.personalize{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.tog{
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form p{
+    font-size: 50px;
+    font-weight: bold;
+}
+form input{
+    padding:20px 40px 10px 40px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: whisper;
+    font-weight: bolder;
+    width: 20%;
+    color: darkmagenta;
+    background-color: transparent;
+}
+form button{
+    padding: 10px 20px 10px 20px;
+    font-size: 35px;
+    margin-top: 20px;
+    width: 10%;
+    border: none;
+    border-radius: 20px;
+    background-color: cadetblue;
+    font-family: whisper;
+    font-weight: bold;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 5px;
+}
+
+/* These are the classes that would be added using JS to facilitate mode change
+and make it have a nice appeal */
+.night{
+    background-color: black;
+    /* night mode background color */
+}
+.move{
+    transform: translateX(100%);
+    /* transition movement of the ball */
+}
+.backG{
+    background-color: lightcyan;
+    /* night background of toggle bar */
+}
+.pathbackG{
+    background-color: pink;
+    /* night background of the ball path */
+}
+.nightText{
+    color: wheat;
+    font-family: madimi;
+    /* color and font-family of background text contents at night mode.*/
+}

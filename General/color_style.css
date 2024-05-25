@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+@font-face {
+    font-family: ojuju;
+    src: url(Ojuju/Ojuju-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: madimi one;
+    src: url(Madimi_One/MadimiOne-Regular.ttf);
+}
+
+header{
+    height: 20vh;
+    background-color: aquamarine;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: ojuju;
+    color: crimson;
+}
+.rule{
+    height: 100px;
+    background-color: blueviolet;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: madimi one;
+}
+#rule{
+    background-color: wheat;
+    color: darkolivegreen;
+    border-radius: 5px;
+    padding: 2px;
+}
+.container{
+    margin: auto;
+    width: 950px;
+    position: relative;
+}
+.retry{
+    height: 60px;
+    background-color: wheat;
+    color: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.squares{
+    height: 30vh;
+    width: 30%;
+    margin: 15px;
+    float: left;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#congrats{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(107, 32, 32), rgb(128, 0, 111), cyan);
+    position: absolute;
+    font-size: 30px;
+    top: 13px;
+    color: turquoise;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#congrats h1{
+    text-align: center;
+}
+#congrats span{
+    font-size: 100px;
+}
+
+
+/* Mobile Responsiveness */
+/* Tablet Screen */
+@media(max-width: 834px){
+    .container{
+        width: 768px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    header{
+        height: 20vh;
+        text-align: center;
+        padding: 10px;
+    }
+    .rule{
+        text-align: center;
+        height: 150px;
+        line-height: 1.5;
+    }
+    .squares{
+        height: 25vh;
+        width: 28%;
+        margin-top: 40px;
+    }
+    #congrats{
+        font-size: 24px;
+    }
+}
+
+/* For Common Mobile Screens */
+@media(max-width: 500px){
+    .container{
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    header{
+        font-size: 25px;
+        text-align: center;
+        padding: 20px;
+        height: 90px;
+    }
+    .rule{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 10px;
+        height: 100px;
+    }
+    .squares{
+        margin: 10px;
+    }
+    #congrats{
+        font-size: 12px;
+        top: 10px;
+    }
+    #congrats span{
+        font-size: 36px;
+    }
+    .retry{
+        font-size: 30px;
+        height: 40px;
+    }
+}
+
+
+/* For smaller screens */
+@media(max-width: 350px) {
+    .container{
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    header{
+        font-size: 15px;
+        text-align: center;
+        padding: 20px;
+        height: 50px;
+    }
+    .rule{
+        font-size: 24px;
+        text-align: center;
+    }
+    .squares{
+        margin: 5px;
+    }
+    #congrats{
+       top: 4px;
+       font-size: 10px;
+    }
+    
+}
