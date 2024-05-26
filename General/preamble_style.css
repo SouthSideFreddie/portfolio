@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.homehead{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(netflixbackground.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 78vh;
+    position: relative;
+    color: white;
+}
+
+
+/* netflix logo */
+.n{
+    transform: translateY(-0.5px) rotate(-2deg);
+}
+.e{
+    transform: translateY(-1.1px) rotate(-2.19deg);
+}
+.t{
+    transform: translateY(-1.19px) rotate(-2.3deg);
+}
+.f{
+    transform: translateY(-1.21px) rotate(0deg);
+}
+.l{
+    transform: translateY(-1.19px) rotate(2.25deg);
+}
+.i{
+    transform: translateY(-1.1px) rotate(2.19deg);
+}
+.x{
+    transform: translateY(-0.5px) rotate(2deg);
+}
+span{
+    display: inline-block;
+}
+
+.header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.logo{
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(230, 16, 27);
+    padding-top: 15px;
+    font-stretch:semi-condensed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.signin{
+    margin-left: 1020px;
+    align-self: safe;
+    padding-top: 15px;
+}
+.signin button{
+    padding: 11px 28px 11px 28px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(230, 16, 27);
+    transition: transform 2s, background-color 1s;
+}
+.signin button:hover{
+    background-color: burlywood;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+}
+
+.admem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+}
+.ad{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.ad h2{
+    font-size: 38px;
+    text-align: center;
+}
+.ad p{
+    padding: 15px;
+    font-size: 24px;
+}
+.membership{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.membership p{
+    width: 400px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.2;
+}
+.membership input{
+    margin: 10px 0px 8px 0px;
+    padding: 14px;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    order: 0;
+}
+.membership button{
+    padding: 3px 60px 1px 60px;
+    width: 255px;
+    height: 6.9vh;
+    font-size: 21px;
+    font-weight: 680;
+    background-color: rgb(230, 16, 27);
+    color: white;
+    border: none;
+    order: 1;
+    border-radius: 5px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.divider{
+    height: 10px;
+    width: 100%;
+    border-radius: 45%;
+    /* border-style: ; */
+    background-color: rgb(41, 38, 38);
+}
+.midsect{
+    background-color: black;
+    color: white;
+    height: 90vh;
+}
+.enjoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.enjoy h1{
+    font-size: 38px;
+    margin-top: 5px;
+    padding: 45px 23px 20px 23px;
+}
+.enjoy p{
+    width: 400px;
+    font-size: 21px;
+    padding-bottom: 30px;
+}
+
+
+.tv{
+    width: 400px;
+    height: 35vh;
+    border: 2px solid white;
+    margin-bottom: 80px;
+}
+.download{
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxofad{
+    border: 2px solid white   ;
+    width: 400px;
+    height: 32vh;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spin{
+    border: 10px solid red;
+    border-radius: 50%;
+    border-top : 10px solid black;
+    height: 100px;
+    width: 100px;
+    animation: spinner 4s linear infinite;
+}
+.downtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+}
+.downtext h1{
+    font-size: 38px;
+    margin-top: 5px;
+    padding: 45px 23px 20px 23px;
+}
+.downtext p{
+    font-size: 19px;
+    padding-bottom: 30px;
+}
