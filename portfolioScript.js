@@ -42,7 +42,7 @@ projreveal.addEventListener("click", function(t){
     function show(){
         hire.style.display = "block"
     }
-    setTimeout(show, 5000)
+    setTimeout(show, 2600)
 })
 
 
