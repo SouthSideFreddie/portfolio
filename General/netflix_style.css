@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: Roboto;
-    src: url(fonts/Roboto/Roboto-Regular.ttf);
+    src: url(Roboto/Roboto-Regular.ttf);
 }
 body{
     font-family: Roboto;
@@ -136,7 +136,7 @@ span{
     height: 550px;
     width: 550px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(61, 3, 3, 0.7)), url(vidsimg/wp11784162-wednesday-netflix-wallpapers.jpg);
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     border-radius: 25px;
 }
@@ -252,27 +252,18 @@ span{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 255px;
     text-align: center;
 }
-.tv img{
+.imago{
     height: 60px;
-    width: 55px;
-}
-.tv{
-    align-self: center;
-    justify-self: stretch;
-    justify-items: end;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .imago img{
-    height: 60px;
-    width: 55px;
-    /* margin-top: 50px; */
-    border: 3px solid blue;
-}
-.ad .imago{
-    align-self: end;
-    justify-self: flex-end;
-    
+    width: 60px;
+    height: 100%;
 }
 .links{
     background-color: black;
