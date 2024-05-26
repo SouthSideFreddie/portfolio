@@ -403,7 +403,7 @@ nav a:hover{
     gap: 20px;
     padding-top: 6%;
     padding-bottom: 90px;
-    animation: large_grow 4s forwards;
+    animation: large_grow 2.5s forwards;
 }
 .projectlist h1{
     position: absolute;
@@ -448,7 +448,7 @@ nav a:hover{
     border: 3px solid brown;
     font-size: 20px;
     background-color: pink;
-    animation: tiny_grow 4s backwards;
+    animation: tiny_grow 1.8s backwards;
     transition: background-color 0.5s ease-in;
 }
 .hireMe a{
