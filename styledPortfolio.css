@@ -1732,8 +1732,8 @@ footer{
         font-size: 28px;
     }
     #skill_sect{
-        max-height: 25vh;
-        padding: 10px 40px 45px 40px;
+        height: auto;
+        padding: 10px;
         text-align: center;
     }
     .skill_text{
@@ -1760,7 +1760,8 @@ footer{
         padding-left: 20px;
     }
     .experienz{
-        max-height: 20vh;
+        height: auto;
+        padding: 8px;
     }
     .exp_text{
         gap: 15px;
@@ -1849,11 +1850,12 @@ footer{
         font-size: 19px;
     }
     .copyright{
-        font-size: 18px;
+        font-size: 14px;
         padding: 3px 0;
     }
     footer{
-        max-height: 80vh;
+        height: auto;
+        width:auto;
     }
 }
 
@@ -2441,4 +2443,3 @@ footer{
         max-height: 80vh;
     }
 }
-
