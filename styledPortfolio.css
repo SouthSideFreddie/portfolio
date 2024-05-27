@@ -559,7 +559,8 @@ footer{
     font-weight: 400;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(82, 38, 9);
-    white-space: nowrap;
+    width: auto;
+/*     white-space: nowrap; */
 }
 .media_links{
     width: auto;
