@@ -73,7 +73,7 @@ body{
 /* Header styling starts here */
 
 header{
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -89,7 +89,7 @@ header{
     object-fit: cover;
 }
 nav{
-    padding: 25px 0px;
+    padding: 15px 0px;
 }
 nav ul{
     display: flex;
@@ -568,10 +568,10 @@ footer{
     gap: 50px;
     padding: 10px 0;
     justify-content: center;
-    padding-top: 10px;
 }
 .media_links img{
-    width: auto;
+    width: 50px;
+    height: 50px;
 }
 #phone{
     cursor: pointer;
