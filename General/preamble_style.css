@@ -6,7 +6,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(netflixbackground.jpeg);
     background-position: center;
     background-size: cover;
-    height: 78vh;
+    height: auto;
     position: relative;
     color: white;
 }
@@ -128,10 +128,9 @@ span{
     gap: 10px;
 }
 .divider{
-    height: 10px;
+    height: 7px;
     width: 100%;
     border-radius: 45%;
-    /* border-style: ; */
     background-color: rgb(41, 38, 38);
 }
 .midsect{
