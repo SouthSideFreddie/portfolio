@@ -4,7 +4,7 @@
 }
 body{
     color: wheat;
-    overflow-x: hidden;
+/*     overflow-x: hidden; */
     background-color: rgb(61, 57, 57);
 }
 
@@ -572,7 +572,6 @@ footer{
 }
 .media_links img{
     width: 50px;
-    height: 50px;
 }
 #phone{
     cursor: pointer;
