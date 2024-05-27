@@ -671,8 +671,9 @@ footer{
         gap: 17px;
     }
     nav a:hover{
-        padding: 0px 0px;
-        background-color: transparent;
+        background-color: beige;
+        border-radius: 30px;
+        padding: 5px 7px;
     }
     .big{
         width: 330px;
