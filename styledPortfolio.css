@@ -204,7 +204,6 @@ nav a:hover{
     padding: 80px 20px;
     display: flex;
     align-items: center;
-    background-color: ;
     animation: grow 1.8s forwards;
     background-color: rgb(87, 83, 77);
 }
