@@ -571,7 +571,7 @@ footer{
     padding-top: 10px;
 }
 .media_links img{
-    width: 50px;
+    width: auto;
 }
 #phone{
     cursor: pointer;
