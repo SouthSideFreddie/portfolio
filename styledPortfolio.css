@@ -1672,6 +1672,7 @@ footer{
     }
     .about_text{
         text-align: justify;
+        width: auto;
     }
     .about_text h1{
         padding-top: 5px;
