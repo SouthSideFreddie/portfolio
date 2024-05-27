@@ -1700,13 +1700,14 @@ footer{
         font-size: 24px;
     }
     .big{
-        width: 306.5px;
+        width: 274px;
     }
     .big h1{
-        font-size: 28px;
+        font-size: 25px;
     }
     #skill_sect{
         padding: 10px;
+        text-align: center;
     }
     .skill_text{
         gap: 12px;
@@ -2398,4 +2399,3 @@ footer{
         height: auto;
     }
 }
-
