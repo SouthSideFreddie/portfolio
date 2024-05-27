@@ -560,7 +560,7 @@ footer{
     white-space: nowrap;
 }
 .media_links{
-    width: 500px;
+    width: auto;
     display: flex;
     gap: 50px;
     padding: 10px 0;
@@ -2443,3 +2443,4 @@ footer{
         max-height: 80vh;
     }
 }
+
