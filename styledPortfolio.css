@@ -104,7 +104,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 20px;
     font-family: madimi;
-    color: black;
+    color: gray;
     transition: background-color .5s ease;
 }
 nav a:hover{
@@ -203,8 +203,9 @@ nav a:hover{
     padding: 80px 20px;
     display: flex;
     align-items: center;
-    background-color: #393E46;
+    background-color: ;
     animation: grow 1.8s forwards;
+    background-color: rgb(87, 83, 77);
 }
 .about_text{
     flex: 1;
@@ -248,7 +249,7 @@ nav a:hover{
 #skill_sect{
     padding: 40px 20px;
     background-color: #01060f;
-    max-height: 70vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,7 +305,8 @@ nav a:hover{
 
 /* Experience Section Styling Starts here */
 .experienz{
-    height: 50vh;
+    height: auto;
+    padding: 20px;
     background-color: #5c8374;
     display: flex;
     justify-content: center;
@@ -499,13 +501,13 @@ nav a:hover{
     font-size: 19px;
     border-bottom: 3px solid;
     color: antiquewhite;
-    border-color: blueviolet;
+    border-color: lightpink;
 }
 #email{
     width: 300px;
     padding: 10px;
     border-bottom: 3px solid;
-    border-color: blueviolet;
+    border-color: lightpink;
     text-align: center;
     color: antiquewhite;
     font-size: 19px;
@@ -518,7 +520,7 @@ nav a:hover{
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    background-color: #7077A1;
+    background-color: wheat;
     font-size: 19px;
     font-weight: 800;
     color: rgb(36, 31, 28);
@@ -536,7 +538,7 @@ nav a:hover{
     padding: 2px;
     background-color: transparent;
     border-bottom: 3px solid;
-    border-color: blueviolet;
+    border-color: lightpink;
     border-radius: 5px;
 }
 
@@ -616,10 +618,7 @@ footer{
 
 @media only screen and (min-width: 1114px) and (max-width:1124px){
     #skill_sect{
-        max-height: 63vh;
-    }
-    .experienz{
-        height: 35vh;
+        padding: 20px;
     }
     .showcase1{
         .one{
@@ -654,8 +653,130 @@ footer{
     }
 }
 
+@media only screen and (min-width:1024px) and (max-width: 1366px){
+    header{
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .logo{
+        width: 150px;
+        float: right;
+        height: 100px;
+    }
+    nav{
+        padding-right: 30px;
+    }
+    nav ul{
+        gap: 17px;
+    }
+    nav a:hover{
+        padding: 0px 0px;
+        background-color: transparent;
+    }
+    .big{
+        width: 330px;
+    }
+    .about_text{
+        text-align: left;
+        padding-right: 8px;
+    }
+    .about_text h1{
+        font-size: 33px;
+        text-align: left;
+    }
+    .big h1{
+        font-size: 30px;
+    }
+    #skill_sect h1{
+        white-space: nowrap;
+        font-size: 70px;
+    }
+    #skillz{
+        width: 650px;
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    #clicktarget{
+        font-size: 90px;
+    }
+    .exp_text{
+        gap: 15px;
+    }
+    .exp_text h1{
+        font-size: 50px;
+    }
+    .exp_text button{
+        padding: 10px 10px;
+        font-size: 30px;
+    }
+    .fill{
+        font-size: 55px;
+    }
+    .showcase1 .one{
+        max-width: 700px;
+    }
+    .showcase2 .two{
+        max-width: 700px;
+    }
+    .showcase3 .three{
+        max-width: 700px;
+    }
+    .intro{
+        text-align: center;
+    }
+    .seeProjects{
+        padding: 10px 10px;
+        font-size: 30px;
+    }
+    .projectlist{
+        padding: 12% 15px ;
+    }
+    .projectlist h1{
+        font-size: 38px;
+        top: -2px;
+    }
+    .projectlist a{
+        font-size: 30px;
+    }
+    .hireMe{
+        bottom: -1px;
+    }
+    #contact form{
+        gap: 15px;
+    }
+    #contact form p{
+        font-size: 38px;
+    }
+    .name_space, #email{
+        width: 450px;
+        font-size: 22px;
+    }
+    #message{
+        min-width: 500px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .submit{
+        padding: 10px;
+        font-size: 20px
+    }
+    #socials h1{
+        font-size: 40px;
+        white-space: wrap;
+        text-align: center;
+    }
+    .mail{
+        font-size: 35px;
+    }
+    .mail a{
+        font-size: 35px;
+    }
+    .copyright{
+        font-size: 25px;
+    }
+}
 
-@media only screen and (min-width: 834px) and (max-width:850px){
+@media only screen and (min-width: 834px) and (max-width:1194px){
     header{
         justify-content: space-between;
     }
@@ -683,10 +804,6 @@ footer{
     .big h1{
         font-size: 30px;
     }
-    #skill_sect{
-        height: 34vh;
-        padding: 10px 10px 3px 10px;
-    }
     .skill_text{
         gap: 10px;
     }
@@ -703,7 +820,7 @@ footer{
         font-size: 90px;
     }
     .experienz{
-        max-height: 30vh;
+        padding:20px;
     }
     .exp_text{
         gap: 60px;
@@ -782,7 +899,7 @@ footer{
     }
 }
 
-@media only screen and (min-width: 800px) and (max-width:830px){
+@media only screen and (min-width: 768px) and (max-width:1024px){
     header{
         justify-content: space-between;
     }
@@ -810,10 +927,6 @@ footer{
     .big h1{
         font-size: 30px;
     }
-    #skill_sect{
-        height: 33vh;
-        padding: 8px 10px;
-    }
     .skill_text{
         gap: 45px;
     }
@@ -829,9 +942,6 @@ footer{
     }
     #clicktarget{
         font-size: 90px;
-    }
-    .experienz{
-        height: 22vh;
     }
     .exp_text{
         gap: 60px;
@@ -911,140 +1021,13 @@ footer{
     }
 }
 
-@media only screen and (min-width:760px) and (max-width: 780px){
-    header{
-        justify-content: space-between;
-        padding: 10px;
-    }
-    .logo{
-        width: 150px;
-        float: right;
-        height: 100px;
-    }
-    nav{
-        padding-right: 30px;
-    }
-    nav ul{
-        gap: 17px;
-    }
-    nav a:hover{
-        padding: 0px 0px;
-        background-color: transparent;
-    }
-    .big{
-        width: 330px;
-    }
-    .about_text{
-        text-align: left;
-        padding-right: 8px;
-    }
-    .about_text h1{
-        font-size: 33px;
-        text-align: left;
-    }
-    .big h1{
-        font-size: 30px;
-    }
-    #skill_sect{
-        height: 40vh;
-    }
-    #skill_sect h1{
-        white-space: nowrap;
-        font-size: 70px;
-    }
-    #skillz{
-        width: 650px;
-        padding-left: 20px;
-        font-size: 30px;
-    }
-    #clicktarget{
-        font-size: 90px;
-    }
-    .experienz{
-        height: 30vh;
-    }
-    .exp_text{
-        gap: 15px;
-    }
-    .exp_text h1{
-        font-size: 50px;
-    }
-    .exp_text button{
-        padding: 10px 10px;
-        font-size: 30px;
-    }
-    .fill{
-        font-size: 55px;
-    }
-    .showcase1 .one{
-        max-width: 700px;
-    }
-    .showcase2 .two{
-        max-width: 700px;
-    }
-    .showcase3 .three{
-        max-width: 700px;
-    }
-    .intro{
-        text-align: center;
-    }
-    .seeProjects{
-        padding: 10px 10px;
-        font-size: 30px;
-    }
-    .projectlist{
-        padding: 12% 15px ;
-    }
-    .projectlist h1{
-        font-size: 38px;
-        top: -2px;
-    }
-    .projectlist a{
-        font-size: 30px;
-    }
-    .hireMe{
-        bottom: -1px;
-    }
-    #contact form{
-        gap: 15px;
-    }
-    #contact form p{
-        font-size: 38px;
-    }
-    .name_space, #email{
-        width: 450px;
-        font-size: 22px;
-    }
-    #message{
-        min-width: 500px;
-        font-size: 25px;
-        text-align: center;
-    }
-    .submit{
-        padding: 10px;
-        font-size: 20px
-    }
-    #socials h1{
-        font-size: 40px;
-        white-space: wrap;
-        text-align: center;
-    }
-    .mail{
-        font-size: 35px;
-    }
-    .mail a{
-        font-size: 35px;
-    }
-    .copyright{
-        font-size: 25px;
-    }
-}
 
 
 
-         /* Big screen mobile phones. Iphone X to 13 and some other android */
 
-@media only screen and (min-width: 428px) and (max-width: 450px){
+         /* Big screened mobile phones. Iphone X to 13 and some other android */
+
+@media only screen and (min-width: 428px) and (max-width: 926px){
     header{
         justify-content: space-between;
     }
@@ -1123,11 +1106,6 @@ footer{
     .big h1{
         font-size: 28px;
     }
-    #skill_sect{
-        max-height: 25vh;
-        padding: 10px 40px 45px 40px;
-        text-align: center;
-    }
     .skill_text{
         gap: 12px;
     }
@@ -1136,7 +1114,7 @@ footer{
     }
     #skillz{
         width: 280px;
-        font-size: 17.5px;
+        font-size: 22px;
         gap: 10px;
         text-align: justify; 
     } 
@@ -1147,12 +1125,12 @@ footer{
     #taunt span{
         font-size: 50px;
     }
-    #skillz{
-        max-width: 750px;
-        padding-left: 20px;
+    #skill_sect{
+        padding: 10px;
     }
-    .experienz{
-        max-height: 20vh;
+    #skillz{
+        max-width: 800px;
+        padding-left: 20px;
     }
     .exp_text{
         gap: 15px;
@@ -1244,7 +1222,7 @@ footer{
     }
 }
 
-@media only screen and (min-width: 412px) and (max-width: 415px){   
+@media only screen and (min-width: 414px) and (max-width: 896px){   
     header{
         justify-content: space-between;
     }
@@ -1320,11 +1298,6 @@ footer{
     .big h1{
         font-size: 28px;
     }
-    #skill_sect{
-        max-height: 29vh;
-        padding: 10px 40px 15px 40px;
-        text-align: center;
-    }
     .skill_text{
         gap: 12px;
     }
@@ -1344,12 +1317,13 @@ footer{
     #taunt span{
         font-size: 50px;
     }
+    #skill_sect{
+        padding: 10px;
+    }
     #skillz{
         max-width: 750px;
         padding-left: 20px;
-    }
-    .experienz{
-        max-height: 20vh;
+        font-size: 22px;
     }
     .exp_text{
         gap: 15px;
@@ -1393,11 +1367,11 @@ footer{
         font-weight: 800;
     }
     .projectlist{
-        padding:48px 0 70px 0 ;
+        padding:50px 0 70px 0 ;
     }
     .projectlist h1{
-        font-size: 21.5px;
-        top: -10px;
+        font-size: 25px;
+        top: -18px;
         text-align: center;
     }
     .projectlist h1 span{
@@ -1449,7 +1423,7 @@ footer{
         font-size: 19px;
     }
     .copyright{
-        font-size: 18px;
+        font-size: 16px;
         padding: 3px 0;
     }
     footer{
@@ -1654,7 +1628,7 @@ footer{
     }
 }
 
-@media only screen and (device-width: 375px){
+@media only screen and (min-width: 375px) and (max-width:812px){
     header{
         justify-content: space-between;
     }
@@ -1732,9 +1706,7 @@ footer{
         font-size: 28px;
     }
     #skill_sect{
-        height: auto;
         padding: 10px;
-        text-align: center;
     }
     .skill_text{
         gap: 12px;
@@ -1859,7 +1831,7 @@ footer{
     }
 }
 
-@media only screen and (min-width: 390px) and (max-width: 393px){
+@media only screen and (min-width: 390px) and (max-width: 844px){
     header{
         justify-content: space-between;
     }
@@ -1889,9 +1861,9 @@ footer{
         transform: translateX(0);
     }
     .links{
-        padding: 0 124.5px;
+        padding: 0 120.6px;
         z-index: 1;
-        right: 0;
+        right: 5px;
         font-size: 20px;
 
     }
@@ -1937,9 +1909,7 @@ footer{
         font-size: 28px;
     }
     #skill_sect{
-        max-height: 25vh;
-        padding: 10px 40px 45px 40px;
-        text-align: center;
+        padding: 10px;
     }
     .skill_text{
         gap: 12px;
@@ -1963,9 +1933,6 @@ footer{
     #skillz{
         max-width: 750px;
         padding-left: 20px;
-    }
-    .experienz{
-        max-height: 20vh;
     }
     .exp_text{
         gap: 15px;
@@ -2091,8 +2058,6 @@ footer{
     .links{
         right: 0;
         padding: 0 80px;
-        
-        
         z-index: 1;
     }
     .links li{
@@ -2126,8 +2091,7 @@ footer{
         font-size: 24px;
     }
     #skill_sect{
-        max-height: 60vh;
-        padding: 10px 40px 50px 40px;
+        padding: 10px;
     }
     .skill_text{
         gap: 12px;
@@ -2152,10 +2116,6 @@ footer{
     #skillz{
         max-width: 750px;
         padding-left: 20px;
-    }
-    .experienz{
-        max-height: 30vh;
-        padding: 20px 0;
     }
     .exp_text{
         gap: 15px;
@@ -2274,9 +2234,9 @@ footer{
         transform: translateX(0);
     }
     .links{
-        padding: 0 95.5px;
+        padding: 0 93px;
         z-index: 1;
-        right: 0;
+        right: 3.5px;
         font-size: 18px;
     }
     .links li {
@@ -2324,8 +2284,7 @@ footer{
         font-size: 27px;
     }
     #skill_sect{
-        max-height: 33vh;
-        padding: 10px 40px 50px 40px;
+        padding: 10px;
     }
     .skill_text{
         gap: 20px;
@@ -2351,10 +2310,6 @@ footer{
     #skillz{
         max-width: 750px;
         padding-left: 20px;
-    }
-    .experienz{
-        max-height: 30vh;
-        padding: 20px 0;
     }
     .exp_text{
         gap: 15px;
@@ -2416,7 +2371,7 @@ footer{
         padding: 5px;
     }
     #socials h1{
-        font-size: 18px;
+        font-size: 16px;
         padding: 5px 0;
         font-weight: 400;
         white-space: wrap;
@@ -2435,12 +2390,12 @@ footer{
         font-size: 19px;
     }
     .copyright{
-        font-size: 15px;
+        font-size: 13px;
         padding: 3px 0;
         white-space: nowrap;
     }
     footer{
-        max-height: 80vh;
+        height: auto;
     }
 }
 
